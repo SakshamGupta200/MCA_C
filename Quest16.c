@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
-void sum(int x, int y);
-void sub(int x, int y);
-void mult(int x, int y);
-void div(int x, int y);
+int sum(int x, int y);
+int sub(int x, int y);
+int mult(int x, int y);
+int div(int x, int y);
 int main()
 {
 int a,b;
@@ -15,19 +15,19 @@ mult(a,b);
 div(a,b);
 return 0;
 }
-void sum(int x,int y)
+int sum(int x,int y)
 {
 printf("sum=%d\n",x+y);
 }
-void sub(int x,int y)
+int sub(int x,int y)
 {
 printf("difference=%d\n",x-y);
 }
-void mult(int x,int y)
+int mult(int x,int y)
 {
 printf("product=%d\n",x*y);
 }
-void div(int x,int y)
+int div(int x,int y)
 {
 printf("quotient=%f\n",(float)x/y);
 }
